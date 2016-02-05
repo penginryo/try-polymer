@@ -5,13 +5,16 @@
     <script src="bower_components/webcomponentsjs/webcomponent-lite.min.js"></script>
     <link rel="import" href="proto-element.html">
     <title>Polymer demo</title>
+    <style>
+      .ezo {
+        width: 90px;
+        height: 90px;
+      }
+    </style>
   </head>
   <body>
-    <ul>
-      <li>foobar</li>
-      <li><proto-element></proto-element></li>
-      <li>hohohoho</li>
-      <li><test-test></test-test></li>
-    </ul>
+    <proto-element>
+      <img src="ezo.png" alt="shape of ezo" class="ezo"/>
+    </<proto-element>
   </body>
 </html>

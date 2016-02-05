@@ -1,24 +1,35 @@
 <link rel="import" href="bower_components/polymer/polymer.html">
 <dom-module id="proto-element">
-  <template>Hello</template>
-  <script>
-    Polymer({
-      is: "proto-element",
-      ready: function() {
-      }
-    });
-  </script>
-</dom-module>
-
-<dom-module id="test-test">
   <template>
-    <a href="https://google.com">google</a>
+
+    <style>
+      .text {
+        font-family: sans-serif;
+        color: #191;
+        padding: 5px;
+      }
+      .wrap {
+        display: inline-block;
+        border: 3px solid #000;
+        border-radius: 10px;
+        background: #ccc;
+      }
+    </style>
+
+    <div>
+      <h1 class="text">EZO</h1>
+
+      <div class="wrap">
+        <content class="insert"></content>
+      </div>
+
+      <p class="text">This is Ezo</p>
+    <div>
+
   </template>
   <script>
     Polymer({
-      is: "test-test",
-      ready: function(){
-      }
+      is: "proto-element"
     });
   </script>
-<dom-module>
+</dom-module>
